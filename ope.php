@@ -16,5 +16,5 @@ if (mysqli_num_rows($result) > 0) {
 } else {
   unset($_SESSION['login']);
   unset($_SESSION['senha']);
-  header('location:index.php');
+  header('location:index.html');
 }
