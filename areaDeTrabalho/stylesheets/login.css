@@ -1,4 +1,175 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background: #141414;
+  background: linear-gradient(150deg, #4f4f4f 0%, #141414 100%);
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  flex-direction: column;
+}
+
+img {
+  width: 10%;
+}
+
+.login-box {
+  max-width: 400px;
+  width: 50%;
+  padding: 5%;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #4f4f4f;
+  font-size: 12px;
+}
+
+.login-box .user-box:invalid {
+  border-bottom: rgb(114, 0, 0);
+}
+
+/*Button*/
+.btn-4 {
+  /*width: 130px;
+  height: 40px;*/
+
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: sans-serif;
+  /*font-weight: 500;*/
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.233),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn-4 {
+  background-color: #4f4f4f;
+  background-image: linear-gradient(315deg, #4f4f4f 0%, #2e2e2e 74%);
+  border: none;
+}
+.btn-4:hover {
+  background-color: #2e2e2e;
+  background-image: linear-gradient(315deg, #2e2e2e 0%, #4f4f4f 74%);
+}
+.btn-4 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-4:before,
+.btn-4:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.9),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-4:before {
+  height: 0%;
+  width: 0.1px;
+}
+.btn-4:after {
+  width: 0%;
+  height: 0.1px;
+}
+.btn-4:hover:before {
+  height: 100%;
+}
+.btn-4:hover:after {
+  width: 100%;
+}
+.btn-4 span:before,
+.btn-4 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.9),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-4 span:before {
+  width: 0.1px;
+  height: 0%;
+}
+.btn-4 span:after {
+  width: 0%;
+  height: 0.1px;
+}
+.btn-4 span:hover:before {
+  height: 100%;
+}
+.btn-4 span:hover:after {
+  width: 100%;
 }
