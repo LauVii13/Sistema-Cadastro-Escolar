@@ -4,18 +4,15 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   font-family: sans-serif;
   background: #141414;
-  background: linear-gradient(150deg, #4f4f4f 0%, #141414 100%);
+  background: linear-gradient(150deg, #adabab 0%, #141414 100%);
 }
 
 .container {
   display: flex;
+  max-height: 100vh;
   min-height: 100vh;
 
   justify-content: center;
@@ -28,12 +25,14 @@ body {
 
 img {
   width: 10%;
+  min-width: 50px;
 }
 
 .login-box {
   max-width: 400px;
-  width: 50%;
+  width: 80%;
   padding: 5%;
+  min-width: 100px;
   margin: 10px;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
@@ -82,10 +81,6 @@ img {
   font-size: 12px;
 }
 
-.login-box .user-box:invalid {
-  border-bottom: rgb(114, 0, 0);
-}
-
 /*Button*/
 .btn-4 {
   /*width: 130px;
@@ -93,7 +88,7 @@ img {
 
   color: #fff;
   border-radius: 5px;
-  padding: 10px 25px;
+  padding: 4% 7%;
   font-family: sans-serif;
   /*font-weight: 500;*/
   background: transparent;
