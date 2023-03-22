@@ -12,7 +12,7 @@ if (mysqli_num_rows($result) > 0) {
   $_SESSION['login'] = $login;
   $_SESSION['senha'] = $senha;
 
-  header("location:areaDeTrabalho/Index.php");
+  header("location:site.php");
 } else {
   unset($_SESSION['login']);
   unset($_SESSION['senha']);
