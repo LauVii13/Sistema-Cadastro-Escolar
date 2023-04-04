@@ -1,21 +1,68 @@
 /*Cards*/
 .card {
+  grid-template:
+    "cardTittle divIcon"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList"
+    "divList divList";
+
+  user-select: none;
   border: 1px solid #00071d75;
   /*border: 1px solid #ffffff10;*/
   border-radius: 25px;
-  margin: 10px;
+  margin: 7.5px;
   display: grid;
 
-  grid-template:
-    "cardTittle divIcon"
-    "divList divList";
-
-  width: 25vw;
-
-  padding: 10px;
-  min-width: 225px;
+  width: 18vw;
   max-width: 50%;
+  padding: 10px;
+
   background-color: #00071d09;
+  min-height: 20vh;
 
   transition: 0.5s;
 
@@ -34,13 +81,42 @@
 .divList {
   margin-left: 20px;
   color: #28324d;
-  transition: 0.5s;
+  font-size: 15px;
 }
 
+.card li {
+  padding-block: 2px;
+}
 .divIcon {
   color: #00071d;
   font-size: 25px;
   text-align: right;
   margin: 10px 10px auto auto;
+  transition: 0.5s;
+}
+
+.card:hover {
+  cursor: pointer;
+  background: rgb(218, 218, 218);
+  background: radial-gradient(
+    circle,
+    rgba(218, 218, 218, 1) 0%,
+    rgba(174, 175, 181, 1) 100%
+  );
+  border: 1px solid #d1d2df;
+  transform: scale(1.05);
+}
+
+/*SubCards*/
+.card.subcard a {
+  text-decoration: none;
+  color: #28324d;
+}
+.card.subcard li:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+.card.subcard a:hover {
+  color: #fff;
   transition: 0.5s;
 }

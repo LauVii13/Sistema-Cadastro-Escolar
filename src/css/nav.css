@@ -7,7 +7,6 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-timeline: 10s;
 }
 body {
   min-height: 100vh;
@@ -158,6 +157,11 @@ li img {
   white-space: normal;
 }
 
+.navigation ul li.disable a {
+  color: #5a5d6d;
+  transition: 1s;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*Toggle config*/
 
@@ -209,12 +213,37 @@ li img {
 }
 
 /*-----------------------------------------------------------------------------------*/
+/*Whatsapp*/
+div.whatsapp {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background: #aeafb5;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+div.whatsapp a {
+  margin: auto;
+  position: absolute;
+  color: #5562aa;
+  font-size: 25px;
+  transition: 0.5s;
+  z-index: 10;
+}
+/*-----------------------------------------------------------------------------------*/
 /*Sections config*/
 .info section {
   float: right;
   padding-top: 5px;
   padding-right: 5px;
-  height: 100vh;
+  height: 100%;
   width: 90vw;
   display: flex;
   flex-direction: row;
@@ -222,6 +251,7 @@ li img {
 
   justify-content: space-between;
   align-content: flex-start;
+  align-items: stretch;
 
   transition: 0.5s;
 }
